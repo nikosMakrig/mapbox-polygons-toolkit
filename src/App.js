@@ -8,12 +8,12 @@ import * as mapboxgl from "mapbox-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { geojson } from "./mock";
+import { MAPBOX_ACCESS_TOKEN } from "./config";
 
 function App() {
 
   const mapStyle = 'mapbox://styles/beatadmiin/ckbjdllyd2cks1iqhmrdyk2km';
-  const MAPBOX_ACCESS_TOKEN =
-    'pk.eyJ1IjoiYmVhdGFkbWlpbiIsImEiOiJja2JjMDRwY3UwMmhyMzBueWRjdTZ3N3QyIn0.REFbsl-3NGN-N1grzgwvjw';
+
   const center = [23.706682920455933, 37.96821397694484];
 
   const MapRender = ({ mapStyle, center, zoom, accessToken }) => {
